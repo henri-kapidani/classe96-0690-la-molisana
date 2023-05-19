@@ -10,15 +10,19 @@ export default {
 </script>
 
 <template>
-	<app-header></app-header>
+	<AppHeader />
 
 	<main>
-		<app-products></app-products>
+		<AppProducts />
 	</main>
 
-	<app-footer></app-footer>
+	<AppFooter />
 </template>
 
 <style lang="scss">
 @use './assets/styles/general.scss' as *;
+// non ho bisogno di reimportare _variables.scss per usare $bg-color perchè in general.scss è stato importato usando @forward
+// body {
+// 	background-color: $bg-color;
+// }
 </style>

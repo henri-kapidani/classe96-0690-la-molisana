@@ -1,1 +1,10 @@
-@use './partials/reset';
+@use './partials/reset' as *;
+@forward './partials/variables'; // rende visibile il contenuto di variables anche al file che importa general.scss
+
+@import 'bootstrap/scss/bootstrap';
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 1rem;
+}
